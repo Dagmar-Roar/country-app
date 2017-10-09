@@ -1,0 +1,24 @@
+page-nav1 {
+    .background-image {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/originals/31/b0/c5/31b0c595d8fb8e24cac6c53029375ca8.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 50vw;
+    }
+ 
+    .main-content {
+        padding: 20px;
+        background-color: white;
+        position: absolute;
+    }
+
+    ion-title{
+        text-align: center;
+       
+        
+    }
+
+    ion-navbar{
+        background-color: #AA3939;
+    }
+}
