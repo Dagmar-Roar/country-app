@@ -1,21 +1,17 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding font-color>
-  <h2>This is my Ionic app!</h2>
+    <ion-navbar>
+      <ion-title>Provider rest api country</ion-title>
+    </ion-navbar>
+  </ion-header>
   
-  <ion-card>
-    <ion-icon name="ios-ionitron-outline" style="zoom:2.0;"></ion-icon>
-    <ion-card-content>
-      <ion-card-title class="target-item">
-        Erwan Aubert
-        </ion-card-title>
-      <p>
-        Enjoy the power of JS.
-      </p>
-    </ion-card-content>
-  </ion-card>
-</ion-content>
+  <ion-content padding>
+    <ion-list>
+      <ion-item *ngFor="let c of countries">
+        <ion-avatar item-left>
+          <img src="{{c.flag}}">
+        </ion-avatar>
+        <h2>{{c.name}}</h2>
+        <p>Capital: {{c.capital}}, Region: {{c.region}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
