@@ -27,6 +27,7 @@ export class RestProvider {
   
   private extractData(res: Response) {
     let body = res.json();
+    console.log(body);
     return body || { };
   }
   

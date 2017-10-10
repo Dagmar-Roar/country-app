@@ -20,6 +20,10 @@ import { FontColorDirective } from '../directives/font-color/font-color';
 /**provider */
 import { RestProvider } from '../providers/rest/rest';
 import { HttpModule } from '@angular/http';
+import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/contacts';
+
+/**component */
+import { PlaceComponent } from '../components/place/place';
 
 @NgModule({
   declarations: [
@@ -29,9 +33,8 @@ import { HttpModule } from '@angular/http';
     HomePage,
     TabsPage,
     Nav1Page,
-    FontColorDirective
-   
-
+    FontColorDirective,
+    PlaceComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,8 @@ import { HttpModule } from '@angular/http';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    RestProvider
+    RestProvider,
+    Contacts
   ]
 })
 export class AppModule {}
