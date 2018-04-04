@@ -9,6 +9,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { Nav1Page } from '../pages/nav1/nav1';
+import { CountryPage } from '../pages/country/country';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -33,6 +34,7 @@ import { PlaceComponent } from '../components/place/place';
     HomePage,
     TabsPage,
     Nav1Page,
+    CountryPage,
     FontColorDirective,
     PlaceComponent
   ],
@@ -47,6 +49,7 @@ import { PlaceComponent } from '../components/place/place';
     AboutPage,
     ContactPage,
     HomePage,
+    CountryPage,
     TabsPage,
     Nav1Page
   ],
