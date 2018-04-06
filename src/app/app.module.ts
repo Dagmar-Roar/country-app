@@ -26,6 +26,10 @@ import { Contacts, Contact, ContactField, ContactName } from '@ionic-native/cont
 /**component */
 import { PlaceComponent } from '../components/place/place';
 
+/**pipes */
+import { SearchPipe } from '../pipes/search/search';
+import { SortPipe } from '../pipes/sort/sort';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -36,7 +40,9 @@ import { PlaceComponent } from '../components/place/place';
     Nav1Page,
     CountryPage,
     FontColorDirective,
-    PlaceComponent
+    PlaceComponent,
+    SearchPipe,
+    SortPipe
   ],
   imports: [
     BrowserModule,

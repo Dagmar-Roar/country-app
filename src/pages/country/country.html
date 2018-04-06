@@ -21,4 +21,9 @@
     <p>Capital: {{selectedCountry.capital}}</p>
     <p>Region: {{selectedCountry.region}}</p>
     <p>Native Name : {{selectedCountry.nativeName}}</p>
+    <p >Languages</p>
+    <ul>
+        <li *ngFor="let item of selectedCountry.languages">{{ item.name}}</li>
+    </ul>
+   
 </ion-content>

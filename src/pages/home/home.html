@@ -5,8 +5,10 @@
   </ion-header>
   
   <ion-content padding>
+      <ion-searchbar [(ngModel)]="terms"></ion-searchbar>
+      <button ion-button type="button" (click)="sort()">Sort</button>
     <ion-list>
-      <button ion-item *ngFor="let country of countries" (click)="countryTapped($event,country)">
+      <button ion-item *ngFor="let country of countries | search : terms | sort: {property: column, order: order}" (click)="countryTapped($event,country)">
        
           <ion-avatar item-left>
             <img src="{{country.flag}}">

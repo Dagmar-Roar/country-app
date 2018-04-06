@@ -12,6 +12,9 @@ export class HomePage {
   
   countries: string[];
   errorMessage: string;
+  descending: boolean = false;
+  order: number;
+  column: string = 'name';
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public rest: RestProvider) {
 
@@ -32,6 +35,11 @@ export class HomePage {
     this.navCtrl.push(CountryPage, {
       country : country
     });
+  }
+
+  sort(){
+    this.descending = !this.descending;
+    this.order = this.descending ? 1 : -1;
   }
   
 }
